@@ -36,8 +36,8 @@
       transform: translate(-50%, -50%);
     }
 
-    /* Center button styles */
-    .center-button, .bottom-left-button, .bottom-right-button, .top-right-button {
+    /* Button styles */
+    .center-button, .bottom-left-button, .bottom-right-button, .top-right-button, .whatsapp-button {
       position: absolute;
       text-decoration: none;
       font-size: 30px; /* Increased font size */
@@ -50,7 +50,7 @@
       text-align: center;
     }
 
-    .center-button:hover, .bottom-left-button:hover, .bottom-right-button:hover, .top-right-button:hover {
+    .center-button:hover, .bottom-left-button:hover, .bottom-right-button:hover, .top-right-button:hover, .whatsapp-button:hover {
       background-color: rgba(255, 255, 255, 0.2);
     }
 
@@ -105,23 +105,6 @@
       line-height: 1.5; /* Increased line height for readability */
       margin: 20px 0;
     }
-
-    /* WhatsApp button styles */
-    .whatsapp-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 30px; /* Increased font size */
-      color: white;
-      background-color: green;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-    }
-
-    .whatsapp-button:hover {
-      background-color: darkgreen;
-    }
   </style>
 </head>
 <body>
@@ -158,8 +141,8 @@
           For advertising enquiries, please send Instagram and other social media links on WhatsApp to Mr. Wolf’s PA, Billy Dower: <br>
           <strong>+44(0) 7946 972 623</strong>
         </p>
-        <a class="whatsapp-button" href="https://wa.me/447946972623" target="_blank">Message on WhatsApp</a>
-        <button class="whatsapp-button" style="background-color: gray;" onclick="showMainPage()">Back</button>
+        <a class="whatsapp-button" href="https://wa.me/447946972623" target="_blank" style="position: relative;">Message on WhatsApp</a>
+        <button class="whatsapp-button" onclick="showMainPage()" style="position: relative;">Back</button>
       </div>
     </div>
   </div>
