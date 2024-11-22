@@ -17,16 +17,23 @@
 
     /* Video container styles */
     #video-container {
-      position: relative;
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
+      overflow: hidden;
     }
 
-    /* Video responsiveness */
+    /* Make the video fill the entire screen while preserving aspect ratio */
     #video-background {
+      position: absolute;
+      top: 50%;
+      left: 50%;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: cover; /* Ensures the video fills the screen without distorting */
+      transform: translate(-50%, -50%);
     }
 
     /* Center button styles */
@@ -74,7 +81,6 @@
     .top-right-button {
       top: 20px;
       right: 20px;
-      z-index: 10;
       border-radius: 50%;
       padding: 8px 12px;
     }
@@ -124,9 +130,9 @@
       <a href="https://www.amazon.com" class="center-button" target="_blank">Buy our Paper</a>
       <a href="https://www.instagram.com/jonoallenphotography" class="bottom-left-button" target="_blank">@jonoallenphotography</a>
       <a href="https://www.tiktok.com" class="bottom-right-button" target="_blank">
-        <img src="tik-tok.png" alt="TikTok"> TikTok
+        <img src="tiktok-icon-free-png.webp" alt="TikTok"> TikTok
       </a>
-      <button class="top-right-button" onclick="showWhatsAppPage()">!</button>
+      <button class="top-right-button" onclick="showWhatsAppPage()">?</button>
     </div>
   </div>
 
